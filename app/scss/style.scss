@@ -3,7 +3,13 @@
 @import 'fonts';
 
 
+body{
+	background-color: green;
+}
 
-
-
+.squre{
+	width: 500px;
+	height: 400px;
+	background-color: red;
+}
 @import 'media';
