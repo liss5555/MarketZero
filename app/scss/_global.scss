@@ -1,0 +1,72 @@
+shtml{
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+html,
+body {
+	height: 100%;
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+}
+ul,
+li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: $text;
+	background-color: #fff;
+	// то что ниже стандартно писать:
+	overflow-x: hidden; // при включенном не работает анимация mixitup// НО, если виключить ,то на мобильном появится scroll--> поєтому добавляю к overflow-x: hidden; --> см ниже: position: relative; + min-width: 320px;(так пишут разработчики чтоби избежать проблем)
+	position: relative;
+	min-width: 320px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.container-fluid{
+	min-width: 100%;
+	padding: 0 30px;
+}
+
+
+
+.breadcrumbs{
+	&__inner{
+	 padding: 0 0 20px;
+	}
+	&__list{
+	 li{
+		display: inline-block;
+		& + li{
+		 padding-left: 22px;
+		}
+	 }
+	}
+ }
