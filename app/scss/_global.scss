@@ -1,4 +1,4 @@
-shtml{
+html{
 	box-sizing: border-box;
 }
 *,
@@ -70,3 +70,11 @@ body {
 	 }
 	}
  }
+
+ .lnr {
+	display: inline-block;
+	fill: currentColor;
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.05em;
+}
