@@ -7,13 +7,11 @@
 		height: 100px;
 	}
 
-	.header__info li {
+	.header__info li{
 		display: inline-block;
-
-		a {
+		& > a {
 			color: green;
 		}
-
 		.lnr-alarm,
 		.lnr-cart,
 		.lnr-envelope {
