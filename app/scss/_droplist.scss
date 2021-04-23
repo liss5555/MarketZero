@@ -77,6 +77,7 @@
 		opacity: 0;
 		height: 0;
 		overflow: hidden;
+		z-index: 10;
 	}
 	.home__drop{
 		padding-top: 0px;
@@ -99,6 +100,7 @@
 		height: auto;
 		overflow: visible;
 		width: 270px;
+		z-index: 10;
 	}
 	&__drop-list{
 		position: absolute;
@@ -132,6 +134,7 @@
 		height: auto;
 		overflow: visible;
 		width: 270px;
+		z-index: 10;
 	}
 	&__drop-list{
 		position: absolute;
