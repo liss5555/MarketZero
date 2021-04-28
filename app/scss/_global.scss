@@ -65,16 +65,16 @@ body {
 
 
 .breadcrumbs {
-	&__inner {
-		padding: 0 0 20px;
-	}
+	// &__inner {
+		
+	// }
 
 	&__list {
 		li {
 			display: inline-block;
 
 			&+li {
-				padding-left: 22px;
+				padding-left: 4px;
 			}
 		}
 	}
