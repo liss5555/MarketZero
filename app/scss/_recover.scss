@@ -1,0 +1,63 @@
+.recover {
+	background-color: #eff1f5;
+	&__inner{
+		padding: 70px 0 120px;
+	}
+	&__item {
+		background-color: #fff;
+		max-width: 555px;
+		margin: 0 auto;
+		border-radius: 4px;
+		box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+	}
+	&__top {
+		padding: 60px 50px 30px 50px;
+		border-bottom: 1px solid #eff1f5;
+		p{
+			font-size: 16px;
+			@include f400;
+			color: 555px;
+			line-height: 30px;
+			margin: 0;
+
+		}
+	}
+	&__form {
+		padding: 40px 50px 60px 50px;
+		input{
+			background-color: #eff1f5;
+			padding: 17px 20px;
+			width: 100%;
+			display: block;
+			border: none;
+			margin-bottom: 30px;
+			&::placeholder{
+				color: #898f96;
+				font-size: 16px;
+				@include f400;
+			}
+		}
+	}
+	&__email{
+		font-size: 16px;
+		@include f500;
+		color: #000;
+		display: block;
+		margin-bottom: 12px;
+	}
+	&__btn {
+		color: #fff;
+		background-color: $btn;
+		border: 1px solid transparent;
+		transition: all .5s;
+		width: 190px;
+		padding: 17px;
+		border-radius: 40px;
+		text-align: center;
+		&:hover{
+			background-color: #fff;
+			color: $btn;
+			border: 1px solid $btn;
+		}
+	}
+}
