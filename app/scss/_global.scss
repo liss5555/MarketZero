@@ -62,20 +62,33 @@ body {
 	padding: 0 30px;
 }
 
-
+.blue__title{
+	color: #fff;
+	font-size: 30px;
+	@include f500;
+}
 
 .breadcrumbs {
-	// &__inner {
-		
-	// }
-
 	&__list {
 		li {
 			display: inline-block;
-
 			&+li {
 				padding-left: 4px;
 			}
+		}
+	}
+}
+.breadcrumbs {
+
+	&__list {
+		li{
+			padding-left: 0;
+		}
+		a{
+			color: #fff;
+		}
+		span{
+			color: #bfcad7;
 		}
 	}
 }

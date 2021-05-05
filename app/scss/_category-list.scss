@@ -89,3 +89,89 @@
 		text-align: center;
 	}
 }
+// ======================================
+//========= range start=========
+
+.range__item-title{
+	margin-bottom: 0;
+}
+.range-slider {
+	position: relative;
+	height: 80px;
+}
+.irs--round .irs-line {
+	height: 6px;
+	background-color: #efedf3;
+}
+.irs--round .irs-bar{
+	height: 6px;
+	background-color: #7347c1;
+}
+.irs--round .irs-handle {
+	top: 30px;
+	width: 18px;
+	height: 18px;
+	border: 4px solid $btn;
+	background-color: #fff;
+	border-radius: 24px;
+
+}
+.irs--round .irs-max, .irs--round .irs-min {
+	display: none;
+}
+.extra-controls{
+	display: flex;
+	justify-content: space-between;
+	input{
+		width: 80px;
+		text-align: center;
+		border: none;
+		background-color: #f1ecf9;
+		padding: 8px;
+		border-radius: 25px;
+		color: #7347c1;
+		position: relative;
+	}
+	label{
+		position: relative;
+		span{
+			position: relative;
+			left: 29px;
+		
+			z-index: 80;
+			color: #7347c1;
+			font-size: 15px;
+		}
+	}
+}
+.irs--round .irs-from, .irs--round .irs-single, .irs--round .irs-to {
+	display: none;
+}
+.pagegrid__aside-range{
+	button{
+		background-color: $btn;
+		width: 170px;
+		padding: 14px 10px;
+		text-align: center;
+		color: #fff;
+		border: none;
+		border-radius: 40px;
+		display: block;
+		margin: 0 auto;
+		margin-top: 30px;
+		margin-bottom: 10px;
+		cursor: pointer;
+		border: 1px solid transparent;
+		transition: all .5s;
+	}
+	button:hover{
+		border: 1px solid $btn;
+		background-color: #fff;
+		color: $btn;
+	}
+}
+
+//========== range end==========
+// ================================
+
+	
