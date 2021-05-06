@@ -1,0 +1,36 @@
+.error {
+	background-color: #fff;
+	padding: 84px 0 100px;
+	text-align: center;
+	&__img {
+		margin-bottom: 50px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		width: 393px;
+		height: 447px;
+		display: inline-block;
+	}
+	&__title {
+		font-size: 30px;
+		color: #000;
+		line-height: 30px;
+		margin-bottom: 40px;
+		@include f400;
+	}
+	&__btn {
+		width: 190px;
+		font-size: 15px;
+		color: #fff;
+		padding: 17px;
+		background-color: $btn;
+		border: 1px solid transparent;
+		transition: all .5s;
+		border-radius: 38px;
+	}
+	&__btn:hover {
+		color: $btn;
+		background-color: #fff;
+		border: 1px solid $btn;
+	}
+}
