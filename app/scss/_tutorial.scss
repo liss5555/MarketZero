@@ -1,0 +1,115 @@
+.blue-center{
+	padding: 75px 0 30px;
+	min-height: 280px;
+	text-align: center;
+	&__title {
+		font-size: 30px;
+		line-height: 50px;
+		color: #fff;
+		@include f500;
+		margin-bottom: 60px;
+		span{
+			@include f400;
+		}
+	}
+
+	&__breadcrumbs {
+		padding-bottom: 20px;
+	}
+}
+
+.tutorial {
+	&__account {
+		background-color: #fff;
+	}
+	&__info {
+		max-width: 460px;
+	}
+	&__img {
+		// display: block;
+		width: 458px;
+		height: 352px;
+		
+	}
+
+	&__title {
+		color: #000; 
+		font-size: 30px;
+		line-height: 45px;
+		@include f400;
+		margin-bottom: 40px;
+		
+	}
+
+	&__text {
+		color: #555;
+		font-size: 16px;
+		line-height: 30px;
+		font-weight: 400;
+		margin-bottom: 30px;
+	}
+
+	&__btn {
+		max-width: 170px;
+		border-radius: 40px;
+		width: 100%;
+		padding: 14px;
+		text-align: center;
+		color: #fff;
+		background-color: $btn;
+		cursor: pointer;
+		transition: all .3s;
+	}
+	&__btn:hover {
+		background-color: #fff;
+		color: $btn;
+		box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+	}
+
+	&__upload {
+		background-color: #eff1f5;
+	}
+
+	&__start {
+		background-color: #fff;
+	}
+}
+
+.tutorial-item {
+	padding: 98px 0 98px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.blue {
+	&__bottom {
+		padding: 100px 0;
+		min-height: 400px;
+		background-image: linear-gradient( 270deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	&__bottom-title {
+		font-size: 36px;
+		color: #fff;
+		font-weight: 400;
+		margin-bottom: 20px;
+	}
+	&__bottom-text {
+		margin-bottom: 45px;
+		color: #fff;
+	}
+	&__bottom-btn {
+		background-color: $btn;
+		color: #fff;
+		transition: all .5s;
+		font-size: 16px;
+		padding: 15px;
+		min-width: 190px;
+		border-radius: 40px;
+	}
+	&__bottom-btn:hover {
+		background-color: #fff ;
+		color: $btn;
+	}
+}
