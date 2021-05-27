@@ -137,8 +137,220 @@
 		a{
 			margin-left: 15px;
 		}
+		a.active img{
+			border: 1px solid green;
+		}
 	}
 }
+// =================11111
+
+
+.page__main .pagelist__main{
+	// width: 0px;
+	// overflow: hidden;
+	transition: all .5s;
+	padding-left: 1140px;
+	
+}
+
+	
+.page__main.list{
+	.pagelist__main{
+		max-width: 1440px;
+		overflow: visible;
+		padding-left: 0;
+		margin-left: -174px;
+	}
+	.page__main.pagegrid__main{
+		width: 0px;
+		overflow: hidden;
+		transition: all .5s;
+		
+	
+	}
+}
+
+
+
+// ==========000000000===========
+.pagelist__main{
+	min-width: 850px;
+	width: 100%;
+	// &-item{
+
+	// }
+}
+
+.list__item{
+	display: flex;
+	justify-content: start;
+	width: 100%;
+	min-height: 210px;
+	margin-bottom: 30px;
+	border-radius: 4px;
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+	&-img{
+		display: block;
+		max-width: 230px;
+		width: 100%;
+		height: 210px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&-box{
+		padding: 25px 25px 25px 18px;
+		background-color: #fff;
+		
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+}
+.item-content{
+	max-width: 235px;
+	padding-right: 11px;
+	&__title{
+		font-size: 18px;
+		font-weight: 500;
+		color: #000;
+		margin-bottom: 20px;
+	}
+	&__text{
+		font-size: 16px;
+		font-weight: 400;
+		color: #555;
+		line-height: 30px;
+		margin-bottom: 20px;
+	}
+}
+.list__item{
+	&-info{
+	max-width: 207px;
+	width: 100%;
+	border-left: 1px solid #eff1f5;
+	border-right: 1px solid #eff1f5;
+	padding: 15px;
+	}
+	&-like{
+		display: block;
+		margin-bottom: 14px;
+	}
+	&-bubble{
+		display: block;
+		margin-bottom: 14px;
+	}
+	&-star{
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 5px;
+	}
+	&-choice{
+		padding: 40px 0px 40px 20px;
+	}
+}
+.choice .info__item{
+	&-price{
+		width: 100%;
+		font-weight: 500;
+		color: $btn;
+		background-color: #e6f1fd;
+		margin-bottom: 27px;
+		margin-right: 0;
+	}
+	&-basket{
+		// padding-left: 30px;
+		display: block;
+		text-align: center;
+	}
+}
+// ======================================
+//========= range start=========
+
+.range__item-title{
+	margin-bottom: 0;
+}
+.range-slider {
+	position: relative;
+	height: 80px;
+}
+.irs--round .irs-line {
+	height: 6px;
+	background-color: #efedf3;
+}
+.irs--round .irs-bar{
+	height: 6px;
+	background-color: #7347c1;
+}
+.irs--round .irs-handle {
+	top: 30px;
+	width: 18px;
+	height: 18px;
+	border: 4px solid $btn;
+	background-color: #fff;
+	border-radius: 24px;
+
+}
+.irs--round .irs-max, .irs--round .irs-min {
+	display: none;
+}
+.extra-controls{
+	display: flex;
+	justify-content: space-between;
+	input{
+		width: 80px;
+		text-align: center;
+		border: none;
+		background-color: #f1ecf9;
+		padding: 8px;
+		border-radius: 25px;
+		color: #7347c1;
+		position: relative;
+	}
+	label{
+		position: relative;
+		span{
+			position: relative;
+			left: 29px;
+		
+			z-index: 80;
+			color: #7347c1;
+			font-size: 15px;
+		}
+	}
+}
+.irs--round .irs-from, .irs--round .irs-single, .irs--round .irs-to {
+	display: none;
+}
+.pagegrid__aside-range{
+	button{
+		background-color: $btn;
+		width: 170px;
+		padding: 14px 10px;
+		text-align: center;
+		color: #fff;
+		border: none;
+		border-radius: 40px;
+		display: block;
+		margin: 0 auto;
+		margin-top: 30px;
+		margin-bottom: 10px;
+		cursor: pointer;
+		border: 1px solid transparent;
+		transition: all .5s;
+	}
+	button:hover{
+		border: 1px solid $btn;
+		background-color: #fff;
+		color: $btn;
+	}
+}
+
+//========== range end==========
+// ================================
+
+	
+// =================22222
 
 .pagegrid__select-price .jq-selectbox__select,
  .pagegrid__select-number .jq-selectbox__select {
@@ -289,7 +501,7 @@
 
 
 
-.main-item{
+.pagegrid__main .main-item{
 	max-width: 262px;
 	background-color: #fff;
 	margin-bottom: 30px;
